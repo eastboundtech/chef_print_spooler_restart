@@ -4,8 +4,8 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-windows_task 'print_spooler_restart' do
+windows_task 'print_spooler_stop' do
   frequency :hourly
-  command 'net stop spooler'
-  command 'net start spooler'
+  run_level :highest
+  command 'powershell Restart-Service -name 'Spooler' '
 end
