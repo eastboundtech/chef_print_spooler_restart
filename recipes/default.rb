@@ -7,5 +7,5 @@
 windows_task 'print_spooler_PS' do
   frequency :hourly
   run_level :highest
-  command 'powershell Restart-Service -name "Spooler"''
+  command 'powershell Restart-Service -name "Spooler"'
 end
