@@ -4,7 +4,7 @@ maintainer_email 'tim@eastbound.io'
 license 'All Rights Reserved'
 description 'print_spooler_restart'
 long_description 'print_spooler_restart'
-version '0.0.3'
+version '0.0.4'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
