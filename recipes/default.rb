@@ -7,7 +7,5 @@
 windows_task 'print_spooler_restart' do
   frequency :hourly
   command 'net stop spooler'
-  puts 'stopped'
   command 'net start spooler'
-  puts 'started'
 end
